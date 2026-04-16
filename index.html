@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Hub - E-commerce Lab</title>
+    </head>
+<body>
+    <h1>Welcome to Fashion Hub</h1>
+    <p>Premium Cotton Shirts starting at ₹450.</p>
+    <button id="buy-button" style="padding: 10px 20px; background: blue; color: white;">Buy Now</button>
+
+    <script>
+        // Simple Event Listener for tracking
+        document.getElementById('buy-button').addEventListener('click', function() {
+            console.log("Button Clicked!");
+            // GA4 Event Trigger will go here
+            gtag('event', 'purchase_click', {
+                'item_name': 'Navy Blue Shirt',
+                'value': 450
+            });
+        });
+    </script>
+</body>
+</html>
